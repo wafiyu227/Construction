@@ -48,7 +48,7 @@
  const backToTopButton = document.getElementById('backToTop');
  
  window.addEventListener('scroll', () => {
-     if (window.pageYOffset > 300) {
+     if (window.scrollY > 300) {
          backToTopButton.classList.add('show');
      } else {
          backToTopButton.classList.remove('show');
@@ -97,7 +97,7 @@
          if (targetElement) {
              const headerOffset = 80;
              const elementPosition = targetElement.getBoundingClientRect().top;
-             const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+             const offsetPosition = elementPosition + window.scrollY - headerOffset;
              
              window.scrollTo({
                  top: offsetPosition,

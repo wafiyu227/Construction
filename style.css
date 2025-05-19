@@ -629,3 +629,8 @@ footer {
         margin-bottom: 10px;
     }
 }
+iframe{
+    display: block;
+    margin: 20px auto;
+    width: 100%;
+}
